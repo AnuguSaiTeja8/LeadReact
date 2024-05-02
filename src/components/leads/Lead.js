@@ -23,7 +23,7 @@ export default function Lead() {
     };
     useEffect(() => {
         if (state) {
-            setData(state.state)
+            setData(state?.state)
         }
     }, [state])
 
@@ -54,7 +54,7 @@ export default function Lead() {
                 toast.success('Updated successfully')
             }
             else {
-                dataArray.push(data);
+                dataArray?.push(data);
                 toast.success(' Added successfully')
             }
 
@@ -83,7 +83,7 @@ export default function Lead() {
                 <Inputs
                     type={"text"}
                     name={"name"}
-                    value={data.name}
+                    value={data?.name}
                     onChange={handleChange}
                     placeholder={"Name"}
                 />
@@ -91,7 +91,7 @@ export default function Lead() {
                 <Inputs
                     type="email"
                     name="email"
-                    value={data.email}
+                    value={data?.email}
                     onChange={handleChange}
                     placeholder="Email"
                 />
@@ -99,13 +99,13 @@ export default function Lead() {
                 <Inputs
                     type="number"
                     name="phoneNumber"
-                    value={data.phoneNumber}
+                    value={data?.phoneNumber}
                     onChange={handleChange}
                     placeholder="Phone Number"
                 />
                 <div>
                     <label>Status</label> <br />
-                    <select name='status' onChange={handleChange} value={data.status} >
+                    <select name='status' onChange={handleChange} value={data?.status} >
                         <option value={0}>Select</option>
                         <option value={1}>New</option>
                         <option value={2}>Contacted</option>
