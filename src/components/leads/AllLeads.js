@@ -112,7 +112,7 @@ export default function AllLeads() {
                        
                        
                     </div> 
-                    : <div className='gridCenter'>No Data</div>}
+                    : <div className='gridCenter'>No Data sai brach</div>}
             </div>
         </>
     )
