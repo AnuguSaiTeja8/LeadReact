@@ -83,7 +83,7 @@ export default function AllLeads() {
 
                            <table className='table'>
                                <tr>
-                                   <th>Name</th>
+                                   <th>Name sai</th>
                                    <th>E mail</th>
                                    <th>Phone Number</th>
                                    <th>Status</th>
